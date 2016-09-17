@@ -14,6 +14,8 @@
 		8B4621E81D8D118E0046F762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4621E61D8D118E0046F762 /* Main.storyboard */; };
 		8B4621F31D8D118E0046F762 /* SMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4621F21D8D118E0046F762 /* SMTests.m */; };
 		8B4621FE1D8D118E0046F762 /* SMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4621FD1D8D118E0046F762 /* SMUITests.m */; };
+		8B46220C1D8D12580046F762 /* YStock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B46220B1D8D12580046F762 /* YStock.m */; };
+		8B46220F1D8D12A90046F762 /* YSDK in Resources */ = {isa = PBXBuildFile; fileRef = 8B46220E1D8D12A90046F762 /* YSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		8B4621F91D8D118E0046F762 /* SMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4621FD1D8D118E0046F762 /* SMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMUITests.m; sourceTree = "<group>"; };
 		8B4621FF1D8D118E0046F762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B46220B1D8D12580046F762 /* YStock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YStock.m; sourceTree = "<group>"; };
+		8B46220D1D8D12710046F762 /* YStock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YStock.h; sourceTree = "<group>"; };
+		8B46220E1D8D12A90046F762 /* YSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YSDK; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +104,10 @@
 		8B4621DA1D8D118E0046F762 /* SM */ = {
 			isa = PBXGroup;
 			children = (
+				8B46220E1D8D12A90046F762 /* YSDK */,
 				8B4621DB1D8D118E0046F762 /* AppDelegate.h */,
+				8B46220D1D8D12710046F762 /* YStock.h */,
+				8B46220B1D8D12580046F762 /* YStock.m */,
 				8B4621DC1D8D118E0046F762 /* AppDelegate.m */,
 				8B4621E11D8D118E0046F762 /* ViewController.h */,
 				8B4621E21D8D118E0046F762 /* ViewController.m */,
@@ -245,6 +253,7 @@
 			files = (
 				8B4621E51D8D118E0046F762 /* Assets.xcassets in Resources */,
 				8B4621E81D8D118E0046F762 /* Main.storyboard in Resources */,
+				8B46220F1D8D12A90046F762 /* YSDK in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B46220C1D8D12580046F762 /* YStock.m in Sources */,
 				8B4621E31D8D118E0046F762 /* ViewController.m in Sources */,
 				8B4621E01D8D118E0046F762 /* main.m in Sources */,
 				8B4621DD1D8D118E0046F762 /* AppDelegate.m in Sources */,
@@ -406,6 +416,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/YSDK/YOSSocial/",
+					"$(SRCROOT)/YSDK/json-framework/",
+					"$(SRCROOT)/YSDK/YOAuth/",
+				);
 				INFOPLIST_FILE = SM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.SM;
@@ -418,6 +435,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/YSDK/YOSSocial/",
+					"$(SRCROOT)/YSDK/json-framework/",
+					"$(SRCROOT)/YSDK/YOAuth/",
+				);
 				INFOPLIST_FILE = SM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.SM;

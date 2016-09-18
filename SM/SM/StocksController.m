@@ -6,9 +6,9 @@
 //  Copyright © 2016 Pavan Shivareddy. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "StocksController.h"
 
-@implementation ViewController
+@implementation StocksController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
